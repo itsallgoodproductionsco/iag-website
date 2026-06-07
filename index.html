@@ -56,9 +56,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 
-<!-- ===================== FAVICON (update with real favicon) ===================== -->
-<link rel="icon" type="image/png" href="/favicon.png" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<!-- ===================== FAVICON ===================== -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" sizes="any" />
+<link rel="icon" type="image/png" href="/favicon.png?v=3" sizes="64x64" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
 
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -87,9 +88,9 @@ body { font-family: var(--sans); background: var(--white); color: var(--text); -
 nav {
   position: sticky; top: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 18px 52px; background: var(--white); border-bottom: 1px solid var(--gray-xlight);
+  padding: 10px 52px; background: var(--white); border-bottom: 1px solid var(--gray-xlight);
 }
-.nav-logo img { height: 60px; width: auto; display: block; }
+.nav-logo img { height: 140px; width: auto; display: block; }
 .nav-links { display: flex; gap: 28px; align-items: center; }
 .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-muted); text-decoration: none; transition: color 0.18s; }
 .nav-links a:hover { color: var(--navy); }
@@ -218,8 +219,8 @@ section { padding: 84px 52px; }
 .form-success p { color: rgba(255,255,255,0.7); font-size: 15px; }
 
 /* FOOTER */
-footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight); padding: 28px 52px; display: flex; justify-content: space-between; align-items: center; }
-.footer-logo img { height: 60px; width: auto; display: block; }
+footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight); padding: 16px 52px; display: flex; justify-content: space-between; align-items: center; }
+.footer-logo img { height: 140px; width: auto; display: block; }
 .footer-copy { font-size: 12px; color: var(--text-muted); }
 .footer-right { display: flex; align-items: center; gap: 20px; }
 .footer-ig { font-size: 13px; font-weight: 500; color: var(--text-muted); text-decoration: none; transition: color 0.18s; }
@@ -250,6 +251,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
   .work-panel.active { grid-template-columns: 1fr; }
   .hero h1 { font-size: 32px; }
   .caps-grid { grid-template-columns: 1fr; }
+  .nav-logo img, .footer-logo img { height: 104px; }
 }
 </style>
 </head>
@@ -425,7 +427,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_38b52085af9e44e882234a133bfc8570~mv2.png/v1/crop/x_49,y_53,w_233,h_235/fill/w_106,h_107,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tQE10FqN_400x400-removebg-preview.png" alt="Client" loading="lazy" /></div>
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_3adc84d5ede54d258b935a6f2629b63f~mv2.png/v1/crop/x_141,y_392,w_848,h_319/fill/w_200,h_71,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TelyRx%20-%20Logo.png" alt="TelyRx" loading="lazy" /></div>
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_1e51f57057f3480b8fea30d05c0a4562~mv2.png/v1/fill/w_222,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/images-removebg-preview.png" alt="Join Brands" loading="lazy" /></div>
-    <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_bf5b920e9dfe481c86ba10b6172d385b~mv2.png/v1/fill/w_222,h_144,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/AL_logo_navy_metalic.png" alt="Acquisition Lab" loading="lazy" /></div>
+    <div class="client-card"><img src="/assets/acquisition-lab-logo.png" alt="Acquisition Lab" loading="lazy" /></div>
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_4f104b711db2433480460c5fbfa58b82~mv2.png/v1/fill/w_106,h_107,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8a54dda6f55ab3a0f152adb2bce9af05_w1200_h628-removebg-preview.png" alt="Rebate Key" loading="lazy" /></div>
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_fd92dbc66f7c4f8ca7628a98ad8f59c2~mv2.png/v1/fill/w_140,h_144,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/images-removebg-preview.png" alt="Client" loading="lazy" /></div>
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_69fafdb9ca904da7b14656c96c43fc60~mv2.png/v1/crop/x_0,y_33,w_200,h_132/fill/w_122,h_77,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/alpha_and_omega_entertainment_logo-removebg-preview.png" alt="Alpha and Omega Entertainment" loading="lazy" /></div>
