@@ -1,0 +1,53 @@
+# =============================================
+# NETLIFY CONFIGURATION
+# It's All Good Productions
+# =============================================
+
+[build]
+  publish = "."
+
+
+# ---- Security & performance headers ----
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# ---- Cache static assets aggressively ----
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# ---- Netlify Forms notification ----
+# IMPORTANT: Replace YOUR_EMAIL_HERE with the email address
+# where you want contact form submissions sent.
+# You can also set this in the Netlify dashboard under
+# Forms > contact > Form notifications.
+
+[build.environment]
+  NODE_VERSION = "18"
