@@ -48,7 +48,7 @@
     "https://www.instagram.com/itsallgoodproductions"
   ],
   "areaServed": "United States",
-  "serviceType": ["Video Production", "Branded Content", "Commercial Production", "Feature Film Production", "Post-Production"]
+  "serviceType": ["Video Production", "Branded Content", "Commercial Production", "Feature Film Production", "Post-Production", "Social Media Management"]
 }
 </script>
 
@@ -179,10 +179,23 @@ section { padding: 84px 52px; }
 .film-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 .film-imdb { font-size: 12px; font-weight: 600; color: var(--navy); margin-top: auto; display: flex; align-items: center; gap: 4px; }
 
+/* SOCIAL */
+.social { background: var(--sky); }
+.social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.social-body { font-size: 15.5px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
+.social-note { display: inline-flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 600; color: var(--navy); background: var(--white); border: 1px solid var(--sky-mid); padding: 9px 16px; border-radius: 100px; }
+.social-note i { font-size: 15px; }
+.social-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.social-card { background: var(--white); border: 1px solid var(--sky-mid); border-radius: 12px; padding: 18px; display: flex; flex-direction: row; gap: 11px; align-items: center; justify-content: flex-start; text-align: left; transition: transform 0.18s, box-shadow 0.18s; }
+.social-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(30,58,123,0.08); }
+.social-card-icon { width: 38px; height: 38px; border-radius: 9px; background: var(--navy-xlight); color: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.social-card-title { font-size: 14px; font-weight: 600; color: var(--text); }
+.social-card-desc { font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5; }
+
 /* CLIENTS */
 .clients { background: var(--off-white); }
-.clients-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 24px; margin-top: 44px; align-items: center; }
-.client-card { display: flex; align-items: center; justify-content: center; padding: 8px; }
+.clients-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 44px; align-items: stretch; }
+.client-card { display: flex; align-items: center; justify-content: center; padding: 28px 24px; background: var(--gray-xlight); border-radius: 16px; }
 .client-card img { max-width: 160px; max-height: 80px; width: auto; height: auto; object-fit: contain; filter: grayscale(100%); opacity: 0.6; transition: filter 0.2s, opacity 0.2s; }
 .client-card:hover img { filter: grayscale(0%); opacity: 1; }
 
@@ -238,6 +251,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
   .hero-actions { padding-bottom: 48px; }
   section { padding: 60px 24px; }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .social-grid { grid-template-columns: 1fr; gap: 36px; }
   .work-panel.active { grid-template-columns: repeat(2, 1fr); }
   .clients-grid { grid-template-columns: repeat(3, 1fr); }
   .test-grid { grid-template-columns: 1fr; }
@@ -248,6 +262,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
 }
 @media (max-width: 600px) {
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
+  .social-cards { grid-template-columns: 1fr; }
   .work-panel.active { grid-template-columns: 1fr; }
   .hero h1 { font-size: 32px; }
   .caps-grid { grid-template-columns: 1fr; }
@@ -264,6 +279,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#work">Work</a>
+    <a href="#social">Social</a>
     <a href="#clients">Clients</a>
     <a href="#testimonials">Kind words</a>
     <a href="#contact" class="nav-cta">Let's chat</a>
@@ -442,6 +458,54 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
   </div>
 </section>
 
+<!-- SOCIAL -->
+<section class="social" id="social">
+  <div class="social-grid">
+    <div>
+      <div class="section-tag">Social media</div>
+      <h2 class="section-title">We also run social — <em>the whole thing.</em></h2>
+      <p class="section-sub">For a handful of brands, we don't just hand off a video and wave goodbye. We run their social start to finish — and treat it like the production work it actually is.</p>
+      <p class="social-body" style="margin-top:20px;">Think of it less as "posting" and more as an ongoing partnership. We figure out the strategy, show up to film the content, build the calendar, write the copy, cut everything for the feed, and hit publish.</p>
+      <p class="social-body">Same crew, same standards we bring to a commercial — just on a steady drip instead of a single drop.</p>
+      <div class="social-note"><i class="ti ti-broadcast" aria-hidden="true"></i> Currently running social for 5 brands</div>
+    </div>
+    <div class="social-cards">
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-bulb" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Strategy &amp; consulting</div><div class="social-card-desc">What to post, where, and why.</div></div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-video" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Filming &amp; shoots</div><div class="social-card-desc">We can come capture the content, too.</div></div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-calendar-event" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Content calendars</div><div class="social-card-desc">Mapped out weeks ahead.</div></div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-scissors" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Editing</div><div class="social-card-desc">Cut for the platform, not just the feed.</div></div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-pencil" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Copywriting</div><div class="social-card-desc">Captions that actually sound like you.</div></div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-send" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Posting &amp; scheduling</div><div class="social-card-desc">We hit publish so you don't have to.</div></div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-speakerphone" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Influence campaigns</div><div class="social-card-desc">We run influence campaigns to get you in front of the right audiences.</div></div>
+      </div>
+      <div class="social-card">
+        <div class="social-card-icon"><i class="ti ti-heart-handshake" aria-hidden="true"></i></div>
+        <div><div class="social-card-title">Feed engagement</div><div class="social-card-desc">We do the engagement on feed — replying, liking, and joining the conversation.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CLIENTS -->
 <section class="clients" id="clients">
   <div class="section-tag">Clients</div>
@@ -461,7 +525,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_1e51f57057f3480b8fea30d05c0a4562~mv2.png/v1/fill/w_222,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/images-removebg-preview.png" alt="Join Brands" loading="lazy" /></div>
     <div class="client-card"><img src="/assets/acquisition-lab-logo.png" alt="Acquisition Lab" loading="lazy" /></div>
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_4f104b711db2433480460c5fbfa58b82~mv2.png/v1/fill/w_106,h_107,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8a54dda6f55ab3a0f152adb2bce9af05_w1200_h628-removebg-preview.png" alt="Rebate Key" loading="lazy" /></div>
-    <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_fd92dbc66f7c4f8ca7628a98ad8f59c2~mv2.png/v1/fill/w_140,h_144,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/images-removebg-preview.png" alt="Client" loading="lazy" /></div>
+    <div class="client-card"><img src="/assets/healthnut-logo.png" alt="Health Nut" loading="lazy" /></div>
     <div class="client-card"><img src="https://static.wixstatic.com/media/f0b3a9_69fafdb9ca904da7b14656c96c43fc60~mv2.png/v1/crop/x_0,y_33,w_200,h_132/fill/w_122,h_77,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/alpha_and_omega_entertainment_logo-removebg-preview.png" alt="Alpha and Omega Entertainment" loading="lazy" /></div>
     <div class="client-card"><img src="/assets/budsies-logo.png" alt="Budsies" loading="lazy" /></div>
   </div>
