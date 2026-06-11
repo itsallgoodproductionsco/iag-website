@@ -99,7 +99,7 @@ nav {
 
 /* HERO */
 .hero { background: var(--navy); padding: 80px 52px 72px; }
-.hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: center; }
 .hero-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); font-size: 12px; font-weight: 700; letter-spacing: 0.04em; padding: 6px 14px; border-radius: 100px; margin-bottom: 22px; border: 1px solid rgba(255,255,255,0.18); }
 .hero h1 { font-size: clamp(36px, 4.5vw, 54px); font-weight: 700; line-height: 1.1; letter-spacing: -0.025em; color: var(--white); margin-bottom: 10px; }
 .hero h1 .yellow { color: var(--yellow-mid); }
@@ -136,7 +136,7 @@ section { padding: 84px 52px; }
 
 /* ABOUT */
 .about { background: var(--off-white); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 48px; align-items: start; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .about-body { font-size: 15.5px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
 .caps-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--navy); margin-bottom: 12px; }
 .caps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
@@ -278,7 +278,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
     <div>
       <div class="hero-tag">📍 Los Angeles, CA</div>
       <h1>High-quality video<br>at <span class="yellow">(almost)</span><br><span class="italic">any budget.</span></h1>
-      <p class="hero-sub">We're a nimble L.A.-based production company that handles everything — concept to final cut. No fluff, no unnecessary overhead. Just really good work.</p>
+      <p class="hero-sub">We're a nimble L.A.-based production company that handles everything — concept to final cut.<br>No fluff, no unnecessary overhead. Just really good work.</p>
       <div class="hero-actions">
         <a href="#work" class="btn-primary">See our work</a>
         <a href="#contact" class="btn-secondary">Start a project</a>
@@ -293,7 +293,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
             <div class="hero-num-label">Online views</div>
           </div>
           <div class="hero-num">
-            <div class="hero-num-val">10<em>+ yrs</em></div>
+            <div class="hero-num-val">15<em>+ yrs</em></div>
             <div class="hero-num-label">In the industry</div>
           </div>
         </div>
@@ -321,11 +321,11 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
 
 <!-- ABOUT -->
 <section class="about" id="about">
-  <div class="section-tag">Who we are</div>
-  <h2 class="section-title">We do it all — <em>literally.</em></h2>
-  <p class="section-sub">One in-house team. Every stage of production. And we actually enjoy the process — which tends to rub off on everyone around us.</p>
   <div class="about-grid">
     <div>
+      <div class="section-tag">Who we are</div>
+      <h2 class="section-title">We do it all — <em>literally.</em></h2>
+      <p class="section-sub">One in-house team. Every stage of production. And we actually enjoy the process — which tends to rub off on everyone around us.</p>
       <p class="about-body">It's All Good Productions is a nimble Los Angeles-based production company specializing in high-quality video content at (almost) any budget. We've been at this for over a decade, and while hitting 130M+ online views is pretty cool, what really gets us going is the work itself.</p>
       <p class="about-body">Branded content, digital shorts, commercials, feature films — you name it, we've made it. Our team handles everything under one roof, so nothing gets lost in translation between ideation, production, and post. You deal with one crew. We handle the rest.</p>
     </div>
