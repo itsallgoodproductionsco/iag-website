@@ -59,6 +59,23 @@ Before deploying, set where form submissions go:
 
 Only do this AFTER confirming the site is live at your domain.
 
+### Redirect the old Wix domain
+
+The Netlify configuration permanently redirects both `itsallgoodproductionsla.com` and
+`www.itsallgoodproductionsla.com` to `https://www.itsallgoodproductions.com`, while
+preserving any path after the domain name.
+
+To activate the redirect:
+
+1. In Netlify, open **Domain management** for this site and add
+   `itsallgoodproductionsla.com` as a domain alias. Confirm that the `www` version is
+   also listed.
+2. In Wix, open the old domain's DNS settings and point the domain to Netlify using the
+   DNS records Netlify displays. Keep the domain registration active, but the Wix site
+   or paid website plan is not required for the redirect.
+3. Wait for DNS and the Netlify SSL certificate to finish provisioning, then test both
+   the bare and `www` versions over HTTPS.
+
 ---
 
 ## STEP 5 — Submit to Google Search Console
