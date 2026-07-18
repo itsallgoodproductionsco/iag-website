@@ -6,6 +6,16 @@
 [build]
   publish = "."
 
+# ---- Redirect the retired Wix domain ----
+# This becomes active after both versions of the old domain are added to this
+# Netlify site and their DNS records are pointed to Netlify.
+[[redirects]]
+  from = "/*"
+  to = "https://www.itsallgoodproductions.com/:splat"
+  status = 301
+  force = true
+  conditions = { Host = ["itsallgoodproductionsla.com", "www.itsallgoodproductionsla.com"] }
+
 
 # ---- Security & performance headers ----
 [[headers]]
