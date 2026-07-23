@@ -10,27 +10,28 @@ publish = "."
 # Domain-level redirects must put the source domain in `from`.
 # (Netlify redirect conditions support Country/Language/Role/Cookie only,
 #  NOT Host, so a Host condition never matches.)
+# Target the apex directly so it's a single hop (no www detour).
 [[redirects]]
 from = "https://itsallgoodproductionsla.com/*"
-to = "https://www.itsallgoodproductions.com/:splat"
+to = "https://itsallgoodproductions.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
 from = "http://itsallgoodproductionsla.com/*"
-to = "https://www.itsallgoodproductions.com/:splat"
+to = "https://itsallgoodproductions.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
 from = "https://www.itsallgoodproductionsla.com/*"
-to = "https://www.itsallgoodproductions.com/:splat"
+to = "https://itsallgoodproductions.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
 from = "http://www.itsallgoodproductionsla.com/*"
-to = "https://www.itsallgoodproductions.com/:splat"
+to = "https://itsallgoodproductions.com/:splat"
 status = 301
 force = true
 
