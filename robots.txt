@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.itsallgoodproductions.com/sitemap.xml
+Sitemap: https://itsallgoodproductions.com/sitemap.xml
