@@ -7,16 +7,17 @@
 <!-- ===================== PRIMARY SEO ===================== -->
 <title>It's All Good Productions | Video Production Company | Los Angeles</title>
 <meta name="description" content="It's All Good Productions is a Los Angeles-based video production company specializing in branded content, commercials, digital shorts, and feature films at (almost) any budget. 130M+ online views." />
-<meta name="keywords" content="video production Los Angeles, branded content, commercial production, digital shorts, feature film production, LA video production company, corporate video, social media video" />
 <meta name="author" content="It's All Good Productions" />
-<link rel="canonical" href="https://www.itsallgoodproductions.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#1E3A7B" />
+<link rel="canonical" href="https://itsallgoodproductions.com/" />
 
 <!-- ===================== OPEN GRAPH (Facebook, LinkedIn) ===================== -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.itsallgoodproductions.com/" />
+<meta property="og:url" content="https://itsallgoodproductions.com/" />
 <meta property="og:title" content="It's All Good Productions | Video Production | Los Angeles" />
 <meta property="og:description" content="A nimble L.A.-based production company handling everything from concept to final cut. 130M+ online views. Branded content, commercials, feature films." />
-<meta property="og:image" content="https://www.itsallgoodproductions.com/og-image.jpg" />
+<meta property="og:image" content="https://itsallgoodproductions.com/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:site_name" content="It's All Good Productions" />
@@ -24,35 +25,224 @@
 
 <!-- ===================== TWITTER CARD ===================== -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:url" content="https://www.itsallgoodproductions.com/" />
+<meta name="twitter:url" content="https://itsallgoodproductions.com/" />
 <meta name="twitter:title" content="It's All Good Productions | Video Production | Los Angeles" />
 <meta name="twitter:description" content="A nimble L.A.-based production company handling everything from concept to final cut. 130M+ online views." />
-<meta name="twitter:image" content="https://www.itsallgoodproductions.com/og-image.jpg" />
+<meta name="twitter:image" content="https://itsallgoodproductions.com/og-image.jpg" />
 
 <!-- ===================== STRUCTURED DATA (JSON-LD) ===================== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "VideoProductionCompany",
-  "name": "It's All Good Productions",
-  "url": "https://www.itsallgoodproductions.com",
-  "logo": "https://www.itsallgoodproductions.com/logo.png",
-  "description": "Los Angeles-based full-service video production company specializing in branded content, commercials, digital shorts, and feature films.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "sameAs": [
-    "https://www.instagram.com/itsallgoodproductions"
-  ],
-  "areaServed": "United States",
-  "serviceType": ["Video Production", "Branded Content", "Commercial Production", "Feature Film Production", "Post-Production", "Social Media Management"]
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://itsallgoodproductions.com/#organization",
+      "name": "It's All Good Productions",
+      "alternateName": "It's All Good Productions LA",
+      "url": "https://itsallgoodproductions.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://static.wixstatic.com/media/f0b3a9_5dcd21cc0b7a4dd7804effcf8ad4aef7~mv2.png"
+      },
+      "image": "https://itsallgoodproductions.com/og-image.jpg",
+      "description": "Los Angeles video production company making branded content, commercials, digital shorts, and feature films at almost any budget, and running social media for brands. 130M+ online views.",
+      "slogan": "High quality video at (almost) any budget.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        }
+      ],
+      "knowsAbout": [
+        "Video production",
+        "Branded content",
+        "Commercial production",
+        "Digital shorts",
+        "Feature film production",
+        "Social media management",
+        "Post production"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/itsallgoodproductions"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Video production services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Branded content and commercials",
+              "description": "Concept to final cut for brands that want video people actually watch.",
+              "provider": {
+                "@id": "https://itsallgoodproductions.com/#organization"
+              },
+              "areaServed": "Los Angeles"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital shorts and social video",
+              "description": "Short form video cut for the platform, not just the feed.",
+              "provider": {
+                "@id": "https://itsallgoodproductions.com/#organization"
+              },
+              "areaServed": "Los Angeles"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Social media management",
+              "description": "Strategy, filming, calendars, copy, and posting, run start to finish.",
+              "provider": {
+                "@id": "https://itsallgoodproductions.com/#organization"
+              },
+              "areaServed": "Los Angeles"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Feature films and narrative",
+              "description": "Feature films, short films, and web series, from development through post.",
+              "provider": {
+                "@id": "https://itsallgoodproductions.com/#organization"
+              },
+              "areaServed": "Los Angeles"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://itsallgoodproductions.com/#website",
+      "url": "https://itsallgoodproductions.com/",
+      "name": "It's All Good Productions",
+      "publisher": {
+        "@id": "https://itsallgoodproductions.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://itsallgoodproductions.com/#webpage",
+      "url": "https://itsallgoodproductions.com/",
+      "name": "It's All Good Productions | Video Production Company | Los Angeles",
+      "isPartOf": {
+        "@id": "https://itsallgoodproductions.com/#website"
+      },
+      "about": {
+        "@id": "https://itsallgoodproductions.com/#organization"
+      },
+      "primaryImageOfPage": "https://itsallgoodproductions.com/og-image.jpg",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://itsallgoodproductions.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does It's All Good Productions do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are a Los Angeles video production company. We make branded content, commercials, digital shorts, and feature films, and we run social media start to finish for a handful of brands."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with small budgets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We make high quality video at almost any budget and keep overhead low. Tell us your budget and deadline and we will figure out the best version of the idea that fits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle the whole production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. One in house team handles concepting, writing, casting, location scouting, directing, on set production, and post production, so you deal with one crew."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you run our social media?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. For a handful of brands we handle strategy, filming, content calendars, editing, copywriting, posting, influence campaigns, and feed engagement. We are currently running social for 5 brands."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work outside Los Angeles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are based in Los Angeles but we travel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who have you worked with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clients include Pepsi, Marriott, Techstars, HP, Elevate Next Level Snacking, Kiid Coffee, TelyRx, Join Brands, Rebate Key, and Acquisition Lab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the contact form on this page. A big idea, a vague concept, or just a budget and a deadline is enough to get started."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Movie",
+      "name": "Better Than Yourself",
+      "description": "Four friends struggling in their careers embark on a weekend getaway only to discover their wildest dreams have inexplicably come true.",
+      "sameAs": "https://www.imdb.com/title/tt15244124/",
+      "productionCompany": {
+        "@id": "https://itsallgoodproductions.com/#organization"
+      }
+    },
+    {
+      "@type": "Movie",
+      "name": "On the Market",
+      "description": "When a newly engaged couple does a rent-to-own program on their dream home, they soon question whether their relationship, or the house, was meant to be.",
+      "sameAs": "https://www.imdb.com/title/tt27703327/",
+      "productionCompany": {
+        "@id": "https://itsallgoodproductions.com/#organization"
+      }
+    }
+  ]
 }
 </script>
 
 <!-- ===================== FONTS & ICONS ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 
@@ -241,6 +431,22 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
 .footer-cta { padding: 10px 22px; background: var(--navy); color: var(--white); border-radius: 8px; font-size: 14px; font-weight: 700; text-decoration: none; transition: background 0.18s; }
 .footer-cta:hover { background: var(--navy-mid); }
 
+/* SERVICES */
+.services { background: var(--sky); }
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 40px; }
+.services-grid .social-card { align-items: flex-start; padding: 22px; }
+.services-grid .social-card-title { font-size: 15px; }
+
+/* FAQ */
+.faq { background: var(--white); }
+.faq-list { max-width: 780px; margin-top: 36px; }
+.faq-list details { border-bottom: 1px solid var(--gray-xlight); padding: 18px 0; }
+.faq-list summary { font-size: 16px; font-weight: 600; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: "+"; font-size: 20px; font-weight: 500; color: var(--navy); line-height: 1; }
+.faq-list details[open] summary::after { content: "\2212"; }
+.faq-list details p { margin-top: 10px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   nav { padding: 16px 24px; }
@@ -257,6 +463,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
   .test-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .films-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px; }
   .footer-right { justify-content: center; }
 }
@@ -273,7 +480,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
 </head>
 <body>
 
-<nav>
+<nav aria-label="Main">
   <div class="nav-logo">
     <img src="https://static.wixstatic.com/media/f0b3a9_5dcd21cc0b7a4dd7804effcf8ad4aef7~mv2.png/v1/crop/x_0,y_1235,w_4167,h_1698/fill/w_598,h_244,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20Final%20File-01.png" alt="It's All Good Productions logo" width="200" height="82" />
   </div>
@@ -293,7 +500,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
 <div class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-tag">📍 Los Angeles, CA</div>
+      <div class="hero-tag">📍 Los Angeles video production company</div>
       <h1>High-quality video<br>at <span class="yellow">(almost)</span><br><span class="italic">any budget.</span></h1>
       <p class="hero-sub">We're a nimble L.A.-based production company that handles everything — concept to final cut.<br>No fluff, no unnecessary overhead. Just really good work.</p>
       <div class="hero-actions">
@@ -359,6 +566,31 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
         <div class="cap-pill"><i class="ti ti-check" style="font-size:14px" aria-hidden="true"></i> Post-production</div>
         <div class="cap-pill special" style="grid-column: span 2;"><i class="ti ti-star" style="font-size:14px" aria-hidden="true"></i> Being your new best friend</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-tag">What we do</div>
+  <h2 class="section-title">Video production in Los Angeles, <em>start to finish.</em></h2>
+  <p class="section-sub">Concepting, writing, casting, location scouting, directing, on set production, and post, all from one in house team.</p>
+  <div class="services-grid">
+    <div class="social-card">
+      <div class="social-card-icon"><i class="ti ti-movie" aria-hidden="true"></i></div>
+      <div><h3 class="social-card-title">Branded content and commercials</h3><p class="social-card-desc">Concept to final cut for brands that want video people actually watch.</p></div>
+    </div>
+    <div class="social-card">
+      <div class="social-card-icon"><i class="ti ti-device-mobile" aria-hidden="true"></i></div>
+      <div><h3 class="social-card-title">Digital shorts and social video</h3><p class="social-card-desc">Short form video cut for the platform, not just the feed.</p></div>
+    </div>
+    <div class="social-card">
+      <div class="social-card-icon"><i class="ti ti-broadcast" aria-hidden="true"></i></div>
+      <div><h3 class="social-card-title">Social media management</h3><p class="social-card-desc">Strategy, filming, calendars, copy, and posting, run start to finish.</p></div>
+    </div>
+    <div class="social-card">
+      <div class="social-card-icon"><i class="ti ti-device-tv" aria-hidden="true"></i></div>
+      <div><h3 class="social-card-title">Feature films and narrative</h3><p class="social-card-desc">Feature films, short films, and web series, from development through post.</p></div>
     </div>
   </div>
 </section>
@@ -451,7 +683,7 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
         <div class="film-poster"><img src="https://static.wixstatic.com/media/f0b3a9_483ea83513b24a53be1534ce9dbefafc~mv2.png/v1/crop/x_28,y_3,w_848,h_1247/fill/w_339,h_498,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202023-09-14%20at%2010_21_46%20AM.png" alt="Better Than Yourself feature film poster" loading="lazy" /></div>
         <div class="film-info"><div class="film-badge post">Post-Production</div><div class="film-title">Better Than Yourself</div><div class="film-desc">Four friends struggling in their careers embark on a weekend getaway only to discover their wildest dreams have inexplicably come true.</div><div class="film-imdb"><i class="ti ti-external-link" style="font-size:13px" aria-hidden="true"></i> View on IMDb</div></div>
       </a>
-      <a class="film-card" href="https://www.imdb.com/title/tt15244124/" target="_blank" rel="noopener noreferrer">
+      <a class="film-card" href="https://www.imdb.com/title/tt27703327/" target="_blank" rel="noopener noreferrer">
         <div class="film-poster"><img src="https://static.wixstatic.com/media/f0b3a9_abda6afc8d9d49bcb596adde7f2d14f0~mv2.png/v1/fill/w_332,h_498,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-09-29%20at%2010_24_39%E2%80%AFAM.png" alt="On the Market feature film poster" loading="lazy" /></div>
         <div class="film-info"><div class="film-badge">Now Streaming</div><div class="film-title">On the Market</div><div class="film-desc">When a newly engaged couple does a rent-to-own program on their dream home, they soon question whether their relationship — or the house — was meant to be.</div><div class="film-imdb"><i class="ti ti-external-link" style="font-size:13px" aria-hidden="true"></i> View on IMDb</div></div>
       </a>
@@ -553,6 +785,21 @@ footer { background: var(--off-white); border-top: 1px solid var(--gray-xlight);
       <div class="test-divider"></div>
       <div><div class="test-author-name">Ian Sells</div><div class="test-author-role">Rebate Key, CEO · Join Brands, Co-Founder</div></div>
     </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-tag">Good questions</div>
+  <h2 class="section-title">Questions we get a lot.</h2>
+  <div class="faq-list">
+    <details><summary>What does It&#39;s All Good Productions do?</summary><p>We are a Los Angeles video production company. We make branded content, commercials, digital shorts, and feature films, and we run social media start to finish for a handful of brands.</p></details>
+    <details><summary>Do you work with small budgets?</summary><p>Yes. We make high quality video at almost any budget and keep overhead low. Tell us your budget and deadline and we will figure out the best version of the idea that fits.</p></details>
+    <details><summary>Do you handle the whole production?</summary><p>Yes. One in house team handles concepting, writing, casting, location scouting, directing, on set production, and post production, so you deal with one crew.</p></details>
+    <details><summary>Can you run our social media?</summary><p>Yes. For a handful of brands we handle strategy, filming, content calendars, editing, copywriting, posting, influence campaigns, and feed engagement. We are currently running social for 5 brands.</p></details>
+    <details><summary>Do you work outside Los Angeles?</summary><p>We are based in Los Angeles but we travel.</p></details>
+    <details><summary>Who have you worked with?</summary><p>Clients include Pepsi, Marriott, Techstars, HP, Elevate Next Level Snacking, Kiid Coffee, TelyRx, Join Brands, Rebate Key, and Acquisition Lab.</p></details>
+    <details><summary>How do I start a project?</summary><p>Use the contact form on this page. A big idea, a vague concept, or just a budget and a deadline is enough to get started.</p></details>
   </div>
 </section>
 
